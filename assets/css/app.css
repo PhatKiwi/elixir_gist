@@ -28,10 +28,35 @@
   height: 225px;
 }
 
+form input[type="text"] {
+  @apply bg-egDark-dark font-brand font-regular text-white text-xs border border-white;
+}
+
+form input[type="text"]:focus {
+  @apply focus:outline-none focus:border-egLavender focus:ring-0;
+}
+
+.textarea {
+  @apply bg-egDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+  border-top: none;
+}
+
+.textarea:focus {
+  @apply focus:outline-none focus:border-white focus:ring-0;
+}
+
 .round-image-padding {
   border-radius: 50%;
   border: 1.5px solid white;
   padding: 4px;
+}
+
+.create_button {
+  @apply bg-egPurple border border-white font-brand font-regular text-black text-base;
+}
+
+.create_button:hover {
+  @apply bg-egPurple-dark text-egDark-light border-egDark-light;
 }
 
 .img-down-arrow::after {
