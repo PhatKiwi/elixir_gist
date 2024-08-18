@@ -56,6 +56,22 @@ form input[type="text"]:focus {
   @apply focus:outline-none focus:border-white focus:ring-0;
 }
 
+.syntax-area {
+  @apply bg-egSyntax border text-xs border-white h-auto;
+  border-top: none;
+  border-left: none;
+}
+
+.syntax-numbers {
+  @apply border border-white font-brand py-[12px] text-xs text-egDark-light bg-egSyntax h-auto w-[54px] text-right overflow-hidden resize-none;
+  border-right: none;
+  border-top: none;
+}
+
+.syntax-numbers:focus {
+  @apply focus:outline-none focus:border-white focus:ring-0;
+}
+
 .round-image-padding {
   border-radius: 50%;
   border: 1.5px solid white;
